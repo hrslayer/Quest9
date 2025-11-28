@@ -18,11 +18,8 @@
 1. ABBGameModeBase (Server Only)
 
 접속 관리: InitNewPlayer로 닉네임을 파싱하고, OnPostLogin으로 접속 인원을 체크합니다.
-
 게임 루프: 최소 인원(MinPlayersToStart)이 모이면 게임을 시작하고, 정답 숫자를 생성합니다.
-
 턴 제어: TickTurnTimer를 통해 플레이어의 남은 시간을 관리하고, 시간 초과 시 패널티를 부여하거나 턴을 넘깁니다.
-
 이탈 처리: Logout을 오버라이드하여 게임 도중 플레이어가 나갔을 때의 예외 처리를 담당합니다.
 
 2. ABBPlayerController (Client & Server)
